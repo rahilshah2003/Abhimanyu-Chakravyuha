@@ -1,24 +1,22 @@
 # Abhimanyu-Chakravyuha
 
-Problem statement
+#Problem statement
 
 Imagine Abhimanyu in Chakravyuha. There are 11 circles in the Chakravyuha surrounded by different enemies. Abhimanyu is located in the innermost circle and has to cross all the 11 circles to reach Pandavas army back. 
  
 Given:
-1.) Each circle is guarded by different enemy where enemy is equipped with k1, k2……k11 powers
-Abhmanyu start from the innermost circle with p power Abhimanyu has a boon to skip fighting enemy
-a times 
-2.) Abhmanyu can recharge himself with power b times 
-3.) Battling in each circle will result in loss of the same power from Abhimanyu as the enemy. 
-4.) If Abhmanyu enter the circle with energy less than the respective enemy, he will lose the battle
-5.)  k3 and k7 enemies are endured with power to regenerate themselves once with half of their initial power and can attack Abhimanyu from behind if he is battling in iteratively next circle
+- Each circle is guarded by different enemy where enemy is equipped with k1, k2……k11 powers Abhmanyu start from the innermost circle with p power Abhimanyu has a boon to skip fighting enemy a times 
+- Abhmanyu can recharge himself with power b times 
+- Battling in each circle will result in loss of the same power from Abhimanyu as the enemy. 
+- If Abhmanyu enter the circle with energy less than the respective enemy, he will lose the battle
+-  k3 and k7 enemies are endured with power to regenerate themselves once with half of their initial power and can attack Abhimanyu from behind if he is battling in iteratively next circle
 
 
-# algorithm
+# Algorithm
 
 1. **Set Up:**
    - Get the starting power `p`, number of jumps `a`, and number of power-ups `b`.
-   - Put the strength of the enemies in each of the 11 rings into a list `k`.
+   - Put the strength of the bad guys in each of the 11 rings into a list `k`.
 
 2. **Go Through Each Ring:**
    - **Power Up:** If Abhimanyu's power `p` is lower than the bad guy's power `k[i]` and he has power-ups left (`b > 0`), he gets back to his starting power and uses up one power-up.
